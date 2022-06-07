@@ -2,7 +2,6 @@ from rest_framework import status
 from rest_framework.permissions import AllowAny
 from rest_framework.views import APIView
 from rest_framework.response import Response
-from rest_framework_simplejwt.tokens import RefreshToken
 from rest_framework_simplejwt.views import TokenObtainPairView
 from .serializers import (
     CustomTokenObtainPairSerializer,
@@ -26,7 +25,6 @@ class RegistrationView(APIView):
         data = {}
         if serializer.is_valid():
             account = serializer.save()
-            refresh = RefreshToken.for_user(account)
             data['response'] = "Registration Successful !!"
             data['username'] = account.username
             data['email'] = account.email

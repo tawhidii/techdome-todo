@@ -50,11 +50,9 @@ class User(AbstractBaseUser, PermissionsMixin):
     Model definition for `User`
     """
     ADMIN = 'admin'
-    MANAGER = 'manager'
     USER = 'user'
     ROLES_CHOICES = (
         (ADMIN, 'Admin'),
-        (MANAGER, 'Manager'),
         (USER, 'User')
     )
     username = models.CharField(db_index=True, max_length=100, unique=True)
