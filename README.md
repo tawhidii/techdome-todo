@@ -17,7 +17,7 @@ It's also possible to up and running on a Windows machine.
 Create virtualenv in your system then follow the commends:
 ```` virtualenv venv --python=python3.8 ```` or ````python3 -m venv venv````
 
-If you successfully creation of the virtualenv then activate it:
+After successfully creation of the virtualenv then activate it:
 ```source venv/bin/activate```
 
 > Then create a `.env` file and paste code from `.env-example` file and update by valid information.
