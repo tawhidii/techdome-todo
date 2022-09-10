@@ -1,5 +1,5 @@
 # Techdome todos API
-> Assignment project for remote Python Developer job at Techdome Solutions Private Limited.
+> A simple to-do application to demonstrate CRUD operations.
 
 ### Setup
 
